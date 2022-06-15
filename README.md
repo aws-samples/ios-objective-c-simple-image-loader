@@ -6,7 +6,7 @@ In addition, the app uses the Network framework's `nw_path_monitor_t` observer t
 
 The application is written in Objective C and intended to be built using Apple's Xcode IDE.
 
-<img style="border:2px solid black" src="screenshot.png">
+<kbd><img src="screenshot.png"></kbd>
 
 ## Security
 
