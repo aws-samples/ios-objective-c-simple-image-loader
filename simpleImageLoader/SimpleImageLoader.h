@@ -3,7 +3,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SimpleImageLoader: UIViewController <UITextFieldDelegate,NSURLSessionDataDelegate,NSURLSessionDelegate>
+@interface SimpleImageLoader: UIViewController <UITextFieldDelegate,NSURLSessionDataDelegate,NSURLSessionDelegate,UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *filename;
 @property (weak, nonatomic) IBOutlet UIButton *fetch;
 @property (weak, nonatomic) IBOutlet UIImageView *image;

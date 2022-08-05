@@ -90,4 +90,9 @@ static NSURLSession *session = nil;
     }];
     [task resume];
 }
+
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.image;
+}
 @end
