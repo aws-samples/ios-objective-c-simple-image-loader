@@ -53,19 +53,29 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="oVA-ny-LBm">
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="oVA-ny-LBm">
                                                 <rect key="frame" x="0.0" y="59" width="240" height="419"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eoV-qC-iBh">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="eoV-qC-iBh">
                                                         <rect key="frame" x="0.0" y="0.0" width="240" height="419"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="eoV-qC-iBh" firstAttribute="leading" secondItem="oVA-ny-LBm" secondAttribute="leading" id="3hc-x9-u7f"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eoV-qC-iBh" secondAttribute="trailing" id="7lc-Fc-iHg"/>
+                                                    <constraint firstItem="eoV-qC-iBh" firstAttribute="top" secondItem="oVA-ny-LBm" secondAttribute="top" id="9Jk-hb-aHL"/>
+                                                    <constraint firstItem="eoV-qC-iBh" firstAttribute="centerX" secondItem="oVA-ny-LBm" secondAttribute="centerX" id="HtW-SS-6zY"/>
+                                                    <constraint firstItem="eoV-qC-iBh" firstAttribute="centerY" secondItem="oVA-ny-LBm" secondAttribute="centerY" id="QnL-Tz-dc7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="eoV-qC-iBh" secondAttribute="bottom" id="aC5-c3-0Gj"/>
+                                                </constraints>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="fZt-yb-yO4"/>
                                                 </connections>
                                             </scrollView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="oVA-ny-LBm" firstAttribute="leading" secondItem="6Hh-2M-QW9" secondAttribute="leading" id="q2a-5C-CQB"/>
+                                        </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olJ-Hr-max" userLabel="Spacing">
                                         <rect key="frame" x="288" y="0.0" width="32" height="478"/>
